@@ -1,0 +1,14 @@
+1.1	Finite-Elemente Untersuchungen
+Im Zuge der Versuchsplanung und der Auswertung wurden Untersuchungen an Finite-Elemente (FE) Modellen der Probekörper durchgeführt. Die Berechnungen erfolgten mit der Software SoFiSTiK. 
+Da davon ausgegangen wird, dass sich die Spannungen über die Breite der Probekörper gleichmäßig ausbreiten, wird keine Unterteilung in Breitenrichtung vorgenommen. Es genügen daher 2D-Scheibenelemente, die auf die Breite der Bauteile extrudiert werden. Als Materialmodelle wurden die in SoFiSTiK hinterlegten Modelle für Holz und Beton verwendet. Bei diesen handelt es sich um linear-elastische Modelle. Das Holz wird im Modell als orthotrop betrachtet. 
+Der Verbund wird dargestellt, indem angrenzende Scheiben durch gemeinsame Knoten starr verbunden sind.
+1.1.1	FE-Untersuchungen zu Schub-Biege-Versuchen
+Im Falle der Schub-Biege-Versuche sind die Modelle bei der Versuchsplanung von besonderer Bedeutung, da die Schlankheit der Balken nicht mehr den Grenzen der Biegetheorie entspricht. Dies zeigt sich in einem Vergleich der Durchbiegungen im FE-Modell im Vergleich zu einer Handrechnung nach Biegetheorie. Die Steifigkeit wird im Falle der Handrechnung deutlich überschätzt. 
+Die Ergebnisse der Versuche zeigen eine gute Übereinstimmung mit den Berechnungen. In Abbildung xy ist die Last-Verformungskurve der FE-Berechnungen den Versuchsergebnissen gegenübergestellt. 
+Anhand der FE-Modelle wurde außerdem der Fall des Betonschwindens bzw. des Holzschwindens untersucht, um zu klären, ob diese möglicherweise ursächlich für den Schaden der ersten Versuchsreihe gewesen sein könnte.
+1.1.2	FE-Untersuchungen zu Biegeversuchen
+Die Biegeversuche wurden ebenfalls in Vorbereitung auf die Experimente mit FE modelliert. 
+Die Ergebnisse einer Handrechnung nach Biegetheorie entsprechen in diesem Fall sehr gut den Ergebnissen aus der FE Berechnung. 
+
+Die Lage der DMS wurde ebenfalls mithilfe der FE-Modelle festgelegt. Dazu wurden aus dem Modell Dehnungen dort abgelesen, wo DMS kleben könnten und daraus entsprechend der Formel xy die Spannungen in der Verbundfuge berechnet. Diese Spannungen wurden dem kontinuierlichen Spannungsverlauf aus dem Modell gegenübergestellt. Die Anzahl und Positionierung der fiktiven DMS im Modell wurde optimiert, indem ein Algorithmus geschrieben wurde, der die summierte Distanz zwischen dem berechneten Verlauf und dem kontinuierlichen Verlauf minimiert.
+
